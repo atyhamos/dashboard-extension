@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Personal Dashboard",
+  "version": "1.0.0",
+  "description": "Async JavaScript practice",
+  "action": {
+    "default_icon": "hourglass.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

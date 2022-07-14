@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.4rem;
+}
+
+body {
+  margin: 0;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 20px #1b1b1b;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+a:hover,
+a:focus {
+  color: aquamarine;
+}
+
+#time {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 1em;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#crypto {
+  font-size: 1.25em;
+}
+
+#crypto-coin {
+  display: flex;
+  align-items: center;
+}
+
+#crypto-coin p {
+  margin-left: 0.5em;
+}
+
+#crypto-prices p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#weather {
+  margin-top: -0.5em;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#weather-top {
+  display: flex;
+  justify-content: right;
+}
+
+#weather img {
+  width: 85px;
+}
+
+#weather-temp {
+  font-size: 1.5rem;
+}
+
+#weather-city {
+  margin-top: -1em;
+}
