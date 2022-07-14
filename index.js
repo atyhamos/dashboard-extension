@@ -28,13 +28,12 @@ navigator.geolocation.getCurrentPosition((position) => {
       return res.json()
     })
     .then((data) => {
-      const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+      const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
       weatherEl.innerHTML = `<div id='weather-top'><img src=${iconUrl} alt=${
         data.weather[0].main
       } />
       <p id='weather-temp'>${Math.round(data.main.temp)}°C</p></div>
       <p id='weather-city'>${data.name}</p>`
-      console.log(data.weather[0].main)
     })
     .catch((err) => {
       weatherEl.innerText = `Failed to load weather info`
@@ -48,8 +47,8 @@ fetch(
 )
   .then((res) => res.json())
   .then((data) => {
-    document.body.style.backgroundImage = `url(${data.urls.regular})`
-    authorEL.innerHTML = `By: <a href=${data.urls.regular} target='__blank'/>${data.user.name}</a>`
+    document.body.style.backgroundImage = `url(${data.urls.full})`
+    authorEL.innerHTML = `By: <a href=${data.urls.full} target='__blank'/>${data.user.name}</a>`
   })
   .catch((err) => {
     // Fallback to default image
